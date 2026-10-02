@@ -19,10 +19,10 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install --frozen-lockfile
+        run: npm ci
 
       - name: Run lint
-        run: npm lint
+        run: npm run lint
 
       - name: Build project
-        run: npm build
+        run: npm run build
