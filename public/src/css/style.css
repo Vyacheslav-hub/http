@@ -1,0 +1,37 @@
+.help-desk {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 4px 300px 4px;
+
+    /* Фоновая сетка */
+    background-color: #fff; /* Цвет листа */
+    background-image:
+            linear-gradient(to right, rgba(0, 0, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0, 0, 255, 0.1) 1px, transparent 1px);
+
+    /* Размер клетки (40px на 40px) */
+    background-size: 20px 20px;
+}
+
+.help-desk__tickets {
+    font-family: sans-serif;
+    font-size: clamp(13px, 11.71px + 0.357vw, 16px);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 0 10px;
+    list-style-type: none;
+}
+
+.help-desk__button {
+    font-family: sans-serif;
+    font-size: clamp(14px, 12.28px + 0.476vw, 18px);
+    background: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+

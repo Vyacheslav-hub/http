@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 export default (_env, argv) => ({
     entry: {
-        app: "./src/js/app.js",
+        app: "./public/src/js/app.js",
     },
     devServer: {
         static: {
@@ -19,7 +19,7 @@ export default (_env, argv) => ({
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: './public/src/index.html',
             filename: 'index.html',
             chunks: ['app']
         }),
